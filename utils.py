@@ -137,7 +137,7 @@ class Utils:
                 self.add(UID, data['url'], key)
 
         old_data = self.compare(UID)
-        time.sleep(10)
+        time.sleep(1800)
         new_data = self.compare(UID)
 
         if len(old_data) == len(new_data):
