@@ -444,12 +444,17 @@ def home():
     count = 0
 
     isClicked = False
+    isMax = False
 
     hover_rects = []
 
     try:
         required = utils.show(user['UID'])
         keys = list(required.keys())
+        n = len(required)
+
+        if n == 8:
+            isMax = True
 
     except:
         required = 'Your list is empty! Please add some items.'
@@ -581,6 +586,12 @@ def home():
         else:
             view_button.disable()
             delete_button.disable()
+
+        if isMax:
+            add_button.disable()
+
+        else:
+            add_button.enable()
 
         # Event loop
         for event in pygame.event.get():
