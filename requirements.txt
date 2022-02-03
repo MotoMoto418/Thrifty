@@ -1,0 +1,7 @@
+beautifulsoup4==4.10.0
+prettytable==3.0.0
+pygame==2.1.2
+pygame_gui==0.6.2
+Pyrebase==3.0.27
+requests==2.27.1
+yagmail==0.15.277

@@ -1,0 +1,237 @@
+{
+    "login_button":
+    {
+        "colours":
+        {
+            "normal_bg":"#B5C99A",
+            "hovered_bg":"#97A97C",
+            "disabled_bg":"#25292e",
+            "selected_bg":"#87986A",
+            "active_bg":"#87986A",
+            "normal_text":"#000000",
+            "hovered_text":"#000000",
+            "selected_text":"#000000",
+            "disabled_text":"#6d736f",
+            "active_text":"#000000",
+            "normal_border": "#B5C99A",
+            "hovered_border": "#97A97C",
+            "disabled_border": "#808080",
+            "selected_border": "#8080B0",
+            "active_border": "#87986A"
+        }, 
+
+        "font":
+        {
+            "name": "montserrat-semibold", 
+            "size": "23", 
+            "regular_path": "Assets/Montserrat-SemiBold.ttf"
+        }, 
+
+        "misc":
+        {
+            "shape": "rounded_rectangle", 
+            "shape_corner_radius": "20"
+        }
+    },
+
+    "signup_button":
+    {
+        "colours":
+        {
+            "normal_bg":"#E9F5DB",
+            "hovered_bg":"#000000",
+            "disabled_bg":"#25292e",
+            "selected_bg":"#87986A",
+            "active_bg":"#404040",
+            "normal_text":"#000000",
+            "hovered_text":"#FFFFFF",
+            "selected_text":"#000000",
+            "disabled_text":"#6d736f",
+            "active_text":"#FFFFFF",
+            "normal_border": "#000000",
+            "hovered_border": "#000000",
+            "disabled_border": "#808080",
+            "selected_border": "#8080B0",
+            "active_border": "#000000"
+        }, 
+
+        "font":
+        {
+            "name": "montserrat-semibold", 
+            "size": "23", 
+            "regular_path": "Assets/Montserrat-SemiBold.ttf"
+        }, 
+
+        "misc":
+        {
+            "shape": "rounded_rectangle", 
+            "shape_corner_radius": "20"
+        }
+    }, 
+
+    "regular_text_entry_line":
+    {
+        "colours":
+        {
+            "dark_bg": "#FFFFFF",
+            "selected_bg": "#FFFFFF",
+            "normal_text": "#000000",
+            "selected_text": "#FFFFFF",
+            "normal_border": "#7F6000",
+            "text_cursor": "#000000"
+        },
+
+        "font":
+        {
+            "name": "montserrat", 
+            "size": "22", 
+            "regular_path": "Assets/Montserrat-Regular.ttf"
+        },
+
+        "misc":
+        {
+            "shape": "rounded_rectangle",
+            "shape_corner_radius": "15",
+            "border_width": "2"
+        }
+    },
+
+    "password_text_entry_line":
+    {
+        "colours":
+        {
+            "dark_bg": "#FFFFFF",
+            "selected_bg": "#FFFFFF",
+            "normal_text": "#000000",
+            "selected_text": "#FFFFFF",
+            "normal_border": "#7F6000",
+            "text_cursor": "#000000"
+        },
+
+        "misc":
+        {
+            "shape": "rounded_rectangle",
+            "shape_corner_radius": "15",
+            "border_width": "2"
+        }
+    },
+
+    "title_text":
+    {
+        "colours":
+        {
+            "dark_bg":"#E9F5DB",
+            "normal_border": "#E9F5DB",
+            "link_text": "#E9F5DB",
+            "link_hover": "#E9F5DB",
+            "link_selected": "#E9F5DB"
+        }, 
+
+        "misc":
+        {
+            "shape": "rectangle",
+            "border_width": "0",
+            "text_horiz_alignment": "center",
+            "text_vert_alignment": "center"
+        }
+    },
+
+    "dashboard_table_label":
+    {
+        "colours":
+        {
+            "dark_bg": "#00000000",
+            "normal_text": "#000000"
+        },
+
+        "font":
+        {
+            "name": "montserrat-extralight",
+            "size": "20",
+            "regular_path": "Assets/Montserrat-Regular.ttf"
+        },
+
+        "misc":
+        {
+            "text_horiz_alignment": "center",
+            "text_vert_alignment": "center"
+        }
+    },
+
+    "dashboard_view_button": 
+    {
+        "colours":
+        {
+            "normal_bg": "#00000000",
+            "hovered_bg": "#00000000",
+            "selected_bg": "#00000000",
+            "active_bg": "#00000000",
+            "normal_text": "#00000000",
+            "hovered_text": "#00000000",
+            "selected_text":"#00000000",
+            "active_text": "#00000000",
+            "normal_border": "#00000000",
+            "hovered_border": "#00000000",
+            "selected_border": "#00000000",
+            "active_border": "#00000000",
+            "normal_text_shadow": "#00000000",
+            "hovered_text_shadow": "#00000000",
+            "selected_text_shadow": "#00000000",
+            "active_text_shadow": "#00000000"
+    },
+
+        "misc": 
+        {
+            "shape": "rectangle"
+        }
+    },
+
+    "grey_panel": 
+    {
+        "colours": 
+        {
+            "dark_bg": "#ced4da",
+            "normal_border": "#ced4da"
+        },
+
+        "misc": 
+        {
+            "shape": "rectangle"
+        }
+    },
+
+    "dashboard_button":
+    {
+        "colours":
+        {
+            "normal_bg":"#FFFFFF",
+            "hovered_bg":"#E7E6E6",
+            "disabled_bg":"#E7E6E6",
+            "selected_bg":"#87986A",
+            "active_bg":"#c5c5c5",
+            "normal_text":"#000000",
+            "hovered_text":"#000000",
+            "selected_text":"#000000",
+            "disabled_text":"#FFFFFF",
+            "active_text":"#000000",
+            "normal_border": "#000000",
+            "hovered_border": "#000000",
+            "disabled_border": "#E7E6E6",
+            "selected_border": "#8080B0",
+            "active_border": "#000000"
+        }, 
+
+        "font":
+        {
+            "name": "montserrat-regular", 
+            "size": "22", 
+            "regular_path": "Assets/Montserrat-Regular.ttf"
+        }, 
+
+        "misc":
+        {
+            "shape": "rounded_rectangle", 
+            "shape_corner_radius": "10"
+        }
+    }
+}
