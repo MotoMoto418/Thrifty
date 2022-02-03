@@ -173,7 +173,3 @@ class Utils:
         
         except:
             return "Error."
-
-if __name__ == '__main__':
-    utils = Utils()
-    utils.monitor('ilNstddjvUe86lChFeixGpN2uyY2')
