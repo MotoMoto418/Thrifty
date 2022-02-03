@@ -54,9 +54,7 @@ class Scraper:
 
                                     except:
                                         prices = code.select('#corePriceDisplay_desktop_feature_div .a-price-whole')
-                                        print(prices)
                                         price = float(prices[0].get_text().replace(',', ''))
-                                        print(price)
 
                                 except:
                                     price = 'Out of stock.'
