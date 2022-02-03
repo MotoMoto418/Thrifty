@@ -68,9 +68,7 @@ class Utils:
             return "Failed."
 
     def show(self, UID):
-        table = PrettyTable(['#', 'Category', 'Best website', 'Best price'])
         count = 0
-        websites = []
         required = {}
 
         try:
@@ -80,13 +78,8 @@ class Utils:
                 for url, price in data.items():
                     website = url.split('.')[1].capitalize()
                     required.update({nick: {"URL": url, "website": website, "price": price}})
-                    # table.add_row([count, nick, website, price])
-                    # websites.append(website)
-
-            beauty = f"\n{table}"
 
             return required
-            # return beauty, websites
 
         except:
             return "Retrieval error."

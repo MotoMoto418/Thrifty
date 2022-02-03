@@ -198,7 +198,6 @@ def login():
                         error_window=pygame_gui.windows.UIMessageWindow(error_window_rect, error_message, manager=manager, window_title='ERROR!')
 
                 if event.ui_element == cancel_button: 
-                    print('cancel')
                     landing()
 
         login_surface.fill(BEIGE)
@@ -323,12 +322,10 @@ def signup():
                         error_window=pygame_gui.windows.UIMessageWindow(error_window_rect, error_message, manager=manager, window_title='ERROR!')
 
                 if event.ui_element == cancel_button:
-                    print('cancel')
                     landing()
 
             if event.type == pygame_gui.UI_CONFIRMATION_DIALOG_CONFIRMED:
                 if event.ui_element == signin_confirmation_window:
-                    print('confirm')
                     try:
                         UID = utils.signin(email, password)
                         fire.db.child('users').child(UID).child('user-data').update({'isLoggedIn': True})
