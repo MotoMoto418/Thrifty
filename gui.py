@@ -184,8 +184,6 @@ def login():
                     email = email_text_box.get_text()
                     password = password_text_box.get_text()
 
-                    print(email, password)
-
                     try:
                         UID = utils.signin(email, password)
                         fire.db.child('users').child(UID).child('user-data').update({'isLoggedIn': True})
@@ -194,7 +192,6 @@ def login():
                         home()
 
                     except:
-                        print('except')
                         error_window_rect = pygame.Rect(ORIGIN, (460, 360))
                         error_window_rect.center = (400, 300)
                         error_message = "Sign in failed, check password and email ID. If you do not have an account, please sign up."
@@ -708,12 +705,16 @@ def add():
 
                     if (len(name) != 0) and (len(amazon_url) != 0) and (len(flipkart_url) != 0):
                         URL.extend([amazon_url, flipkart_url])
+                        count = 0
+                        success = False
 
                         try:
                             for url in URL:
-                                    utils.add(user['UID'], url, name)
+                                if utils.add(user['UID'], url, name):
+                                    count += 1
 
-                            success = True
+                            if count == 2:
+                                success = True
 
                         except:
                             success = False

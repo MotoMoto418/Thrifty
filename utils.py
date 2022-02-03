@@ -50,13 +50,13 @@ class Utils:
                 data = scrape.fetch(URL)
                 fire.db.child('users').child(UID).child('tracking-data').child(nick).update(data)
 
-                return "Successful."
+                return True
 
             except:
-                return "Failed."
+                return False
 
         else:
-            return "Insecure URL."
+            return False
 
     def delete(self, UID, key):
         try:

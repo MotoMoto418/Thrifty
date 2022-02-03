@@ -54,7 +54,9 @@ class Scraper:
 
                                     except:
                                         prices = code.select('#corePriceDisplay_desktop_feature_div .a-price-whole')
+                                        print(prices)
                                         price = float(prices[0].get_text().replace(',', ''))
+                                        print(price)
 
                                 except:
                                     price = 'Out of stock.'
@@ -113,17 +115,3 @@ class Scraper:
 
         except:
             return "\nRetrieval failed.\n"
-
-if __name__ == '__main__':
-    urls = [
-        'https://www.amazon.in/Lenovo-39-62cm-Windows-Keyboard-82JW0052IN/dp/B09DMWJH96/ref=sr_1_3?keywords=Lenovo+legion+5+5800h&qid=1639501786&sr=8-3',
-        'https://www.flipkart.com/lenovo-legion-5-ryzen-7-octa-core-5800h-16-gb-512-gb-ssd-windows-10-home-4-graphics-nvidia-geforce-rtx-3050-15ach6-gaming-laptop/p/itm50d5ba7a10251?pid=COMG62ZASBMGDC5M&lid=LSTCOMG62ZASBMGDC5MRQSUJN&marketplace=FLIPKART&q=lenovo+legion&store=search.flipkart.com&srno=s_1_5&otracker=search&otracker1=search&fm=SEARCH&iid=ba962896-dbc7-474c-b6fa-3bae3dce1c8f.COMG62ZASBMGDC5M.SEARCH&ppt=sp&ppn=sp&ssid=a4i46g498g0000001639500094619&qH=5dc4906269c2c6e5'
-    ]
-    scrape = Scraper()
-    #print(scrape.monitor(urls))
-
-    URL = 'https://www.amazon.in/Lenovo-39-62cm-Windows-Keyboard-82JW0052IN/dp/B09DMWJH96/ref=sr_1_3?keywords=Lenovo+legion+5+5800h&qid=1639501786&sr=8-3'
-    print(scrape.fetch(URL))
-
-
-# thriftypricechecker@gmail.com, igotthemkeyskeyskeys
